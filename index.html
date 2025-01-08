@@ -234,7 +234,7 @@
                     <img
                       class="modal-trigger"
                       data-target="project-4-modal"
-                      src="img/project-2-cover.png"
+                      src="img/projects/tet/Picture1.png"
                     />
                   </figure>
                 </article>
@@ -246,7 +246,7 @@
                     <img
                       class="modal-trigger"
                       data-target="project-5-modal"
-                      src="img/project-5-cover.png"
+                      src="img/projects/subdivision/Picture1.png"
                     />
                   </figure>
                 </article>
@@ -258,7 +258,7 @@
                     <img
                       class="modal-trigger"
                       data-target="project-6-modal"
-                      src="img/project-6-cover.png"
+                      src="img/projects/space-invaders/main.png"
                     />
                   </figure>
                 </article>
@@ -532,22 +532,26 @@
         <section class="modal-card-body">
           <div id="project-4-modal-carousel" class="carousel">
             <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
+              <img src="img/projects/tet/Picture2.png" />
             </figure>
           </div>
 
           <div class="content">
             <p>
-                Project explores the use of WebGPU, a new graphics API, for direct volume visualization of tetrahedral meshes.
-                This project began by the need to efficiently render complex, unstructured datasets using WebGPU’s feature set to
-                implement direct volume visualization for a tetrahedral mesh. The renderer traverses the tetrahedral mesh
-                sequentially, accumulating color and alpha values. This continues until the ray exits the mesh
+                Project explores the use of WebGPU, a new graphics API, for direct volume visualization of tetrahedral meshes. 
+            </p>
+            
+            <p>
+                This project began by the need to efficiently render complex, unstructured datasets using WebGPU’s feature set to 
+                implement direct volume visualization for a tetrahedral mesh. The renderer traverses the tetrahedral mesh 
+                sequentially, accumulating color and alpha values. This continues until the ray exits the mesh. 
+            </p>
+            
+            <p>
+                Renderer is capable to visualize the turbulence around a golf ball, but currently faces performance limitations when 
+                handling large meshes due to CPU-intensive pre-processing steps. Future work will focus on moving these 
+                pre-processing steps to WebGPU compute shaders to improve performance and enable the visualization of larger, 
+                more complex datasets.
             </p>
             <div class="tags">
               <span class="tag">Typescript</span>
@@ -567,34 +571,25 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
+          <p class="modal-card-title">Mesh Subdivision</p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
           <div id="project-5-modal-carousel" class="carousel">
             <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
+              <img src="img/projects/subdivision/donald.png" />
             </figure>
           </div>
 
           <div class="content">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+                Divides a given mesh into n number of subdivisions using Catmull-clark subdivision which smooths out low-poly
+                meshes. Demonstrated expertise in computational geometry and mesh processing techniques, contributing to the
+                refinement of low-poly models for improved visual fidelity.
             </p>
             <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
+              <span class="tag">Python</span>
+              <span class="tag">Geometric Modeling</span>
             </div>
           </div>
         </section>
@@ -608,34 +603,23 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Project title</p>
+          <p class="modal-card-title">Space Invaders</p>
           <button class="delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
           <div id="project-6-modal-carousel" class="carousel">
             <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/1.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/2.png" />
-            </figure>
-            <figure class="image is-4by3 carousel-cell">
-              <img src="img/carousel/3.png" />
+              <img src="img/projects/space-invaders/screenshot.png" />
             </figure>
           </div>
 
           <div class="content">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+                Executable 2D minigame space invaders minigame where you control a laser canon and try to shoot down incoming
+                aliens! Follow the instructions on the <a href="https://github.com/mfiqi/Space-Invaders">repo</a> to play the game!
             </p>
             <div class="tags">
-              <span class="tag">angular</span>
-              <span class="tag">mongo</span>
-              <span class="tag">typscript</span>
-              <span class="tag">node</span>
+              <span class="tag">C</span>
             </div>
           </div>
         </section>
